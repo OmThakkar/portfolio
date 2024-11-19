@@ -51,9 +51,9 @@ export function ProjectCard({
             >
               <span
                 key={index}
-                className="p-2 bg-deep-purple-50 dark:bg-deep-purple-50/10 text-deep-purple-900 dark:text-deep-purple-50 rounded-full"
+                className="p-3 bg-deep-purple-50 dark:bg-deep-purple-50/10 text-deep-purple-900 dark:text-deep-purple-50 rounded-full"
               >
-                <tech.icon className="tech-icon" size={16} />
+                <tech.icon className="tech-icon" size={20} />
               </span>
             </Tooltip>
           ))}
