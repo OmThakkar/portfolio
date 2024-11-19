@@ -3,6 +3,7 @@ import about from "../assets/about-light.png";
 import aboutDark from "../assets/about-dark.png";
 import quality from "../assets/quality.png";
 
+
 const About = () => {
   return (
     <section className="section-container flex flex-col gap-6 mt-12">
