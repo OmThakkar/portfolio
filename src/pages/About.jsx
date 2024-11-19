@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="section-container flex flex-col gap-6 mt-12">
       <div className="grid grid-cols-12 gap-y-6 lg:gap-12 items-center">
-        <div className="h-96 col-span-12 lg:col-span-6">
+        <div className="h-80 lg:h-96 col-span-12 lg:col-span-6">
           <img
             src={about}
             alt="Logo"
