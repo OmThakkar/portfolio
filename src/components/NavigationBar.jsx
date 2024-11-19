@@ -100,7 +100,7 @@ export function NavigationBar() {
           <div className="text-2xl lg:text-3xl font-medium font-caveat">
             <Typewriter
               options={{
-                strings: ["Om Thakkar", "Passion", "Creativity", "Knowledge"],
+                strings: ["Om Thakkar", "Passion", "Creativity", "Perfection"],
                 autoStart: true,
                 loop: true,
                 cursor: '_'

@@ -6,7 +6,7 @@ const educationData = [
     {
       img: SPPU,
       tenure: "Dec 2021 - Jun 2025",
-      title: "B.E. Computer Engineering - Savitiribai Phule Pune University",
+      title: "B.E. Computer Engineering - SPPU",
       description: "Worked on various UI/UX projects and improved overall design systems.",
       achievements: [
         "Designed template UIs and design systems in Figma.",
