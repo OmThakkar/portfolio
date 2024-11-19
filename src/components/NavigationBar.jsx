@@ -95,12 +95,12 @@ export function NavigationBar() {
           className="inline-flex items-center gap-2"
         >
           <div>
-            <img src={logo} alt="" className="h-9" />
+            <img src={logo} alt="" className="h-7 lg:h-9" />
           </div>
-          <div className="text-3xl font-medium font-caveat">
+          <div className="text-2xl lg:text-3xl font-medium font-caveat">
             <Typewriter
               options={{
-                strings: ["Om Thakkar", "Passion", "Creativiy", "Knowledge"],
+                strings: ["Om Thakkar", "Passion", "Creativity", "Knowledge"],
                 autoStart: true,
                 loop: true,
                 cursor: '_'
