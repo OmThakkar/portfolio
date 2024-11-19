@@ -19,7 +19,7 @@ export function ProjectCard({
   return (
     <div className="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col gap-4">
       <Link to={`/work/${title}`} key={index} className="flex flex-col gap-4">
-        <div className="h-56 rounded-xl overflow-hidden w-full">
+        <div className="h-52 rounded-xl overflow-hidden w-full">
           <img
             src={heroImg}
             alt={title}
