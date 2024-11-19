@@ -5,7 +5,7 @@ import SPPU from "../assets/sppu.png"
 const educationData = [
     {
       img: SPPU,
-      tenure: "2021 - 2025",
+      tenure: "Dec 2021 - Jun 2025",
       title: "B.E. Computer Engineering - Savitiribai Phule Pune University",
       description: "Worked on various UI/UX projects and improved overall design systems.",
       achievements: [
@@ -16,7 +16,7 @@ const educationData = [
     },
     {
       img: DJC,
-      tenure: "2019 - 2021",
+      tenure: "Jul 2019 - Aug 2021",
       title: "Higher Secondary Education (HSC)",
       description: "Specialized in creating clean and user-friendly interfaces.",
       achievements: [
@@ -27,7 +27,7 @@ const educationData = [
     },
     {
       img: DEMS,
-      tenure: "2006 - 2019",
+      tenure: "Jun 2006 - Jun 2019",
       title: "Secondary Education (SSC)",
       description: "Specialized in creating clean and user-friendly interfaces.",
       achievements: [
