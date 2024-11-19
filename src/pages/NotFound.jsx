@@ -7,7 +7,7 @@ import { Home } from "lucide-react";
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col h-full items-center text-center gap-4 min-h-svh justify-center">
+    <div className="section-container flex flex-col h-full items-center text-center gap-4 min-h-svh justify-center">
       <img
         src={alien}
         alt="Not Found Illustration"
