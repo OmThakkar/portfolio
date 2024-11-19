@@ -24,12 +24,12 @@ const Footer = () => {
           Connect With Me
         </p>
       <div className="flex items-center gap-2">
-        <a href="https://www.instagram.com/omthakkar343/#" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiInstagram size={18}/></a>
-        <a href="https://www.linkedin.com/in/omthakkar343/" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiLinkedin size={18}/></a>
-        <a href="https://github.com/OmThakkar" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiGithub size={18}/></a>
+        <a href="https://www.instagram.com/omthakkar343/#" target="_blank" className="text-deep-purple-900 dark:text-deep-purple-100 p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiInstagram size={18}/></a>
+        <a href="https://www.linkedin.com/in/omthakkar343/" target="_blank" className="text-deep-purple-900 dark:text-deep-purple-100 p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiLinkedin size={18}/></a>
+        <a href="https://github.com/OmThakkar" target="_blank" className="text-deep-purple-900 dark:text-deep-purple-100 p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiGithub size={18}/></a>
         <a href="https://discordapp.com/users/omthakkar" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiDiscord size={18}/></a>
-        <a href="https://wa.me/917448158105" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiWhatsapp size={18}/></a>
-        <a href="mailto:craftedbyom@gmail.com" target="_blank" className="p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><MdOutlineMailOutline size={18}/></a>
+        <a href="https://wa.me/917448158105" target="_blank" className="text-deep-purple-900 dark:text-deep-purple-100 p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><SiWhatsapp size={18}/></a>
+        <a href="mailto:craftedbyom@gmail.com" target="_blank" className="text-deep-purple-900 dark:text-deep-purple-100 p-2 bg-deep-purple-50/50 dark:bg-deep-purple-50/10 rounded-lg hover:bg-deep-purple-400 dark:hover:bg-deep-purple-400 hover:text-white transition-all duration-100 ease-in-out"><MdOutlineMailOutline size={18}/></a>
       </div>
       </div>
     </footer>
