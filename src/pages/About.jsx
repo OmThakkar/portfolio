@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-y-6 lg:gap-12 items-center">
+      <div className="grid grid-cols-12 gap-y-8 lg:gap-12 items-center">
         <div className="col-span-12 lg:col-span-6 order-last lg:order-first">
           <ol className="flex flex-col gap-6">
             <li>
