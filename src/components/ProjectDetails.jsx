@@ -1,16 +1,15 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import projects from "../data/projects";
-import { Tooltip, Breadcrumbs } from "@material-tailwind/react";
+import { Tooltip, Breadcrumbs, ThemeProvider } from "@material-tailwind/react";
 import NotFound from "../pages/NotFound";
 
 const ProjectDetails = () => {
-  
   const { title } = useParams();
   const project = projects.find((p) => p.title === title);
 
   if (!project) {
-    return <NotFound/>;
+    return <NotFound />;
   }
 
   // Function to add <br><br> after every 3 full stops
@@ -38,19 +37,58 @@ const ProjectDetails = () => {
       .replace(/<br><br>\s*\./g, "<br><br>"); // Remove any full stop immediately after <br><br>
   };
 
+  const theme = {
+    breadcrumbs: {
+      defaultProps: {
+        className: "",
+        fullWidth: false,
+        separator: "/",
+      },
+      styles: {
+        base: {
+          separator: {
+            color: "text-gray-800 dark:text-gray-100",
+            fontSize: "text-sm",
+            fontSmoothing: "antialiased",
+            fontFamily: "font-sans",
+            fontWeight: "font-normal",
+            lineHeight: "leading-normal",
+            px: "mx-2",
+            pointerEvents: "pointer-events-none",
+            userSelcet: "select-none",
+          },
+        },
+      },
+    },
+  };
+
   return (
     <section className="section-container flex flex-col gap-6 mt-10 lg:mt-12">
-      <Breadcrumbs color="deep-purple" fullWidth className="bg-transparent text-deep-purple-900 dark:text-deep-purple-50">
-      <Link to="/" className="text-gray-800 dark:text-gray-200 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium">
-        Home
-      </Link>
-      <Link to="/work" className="text-gray-800 dark:text-gray-200 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium">
-        Work
-      </Link>
-      <Link className="text-deep-purple-400 dark:text-deep-purple-300 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium">{project.title}</Link>
-    </Breadcrumbs>
+      <ThemeProvider value={theme}>
+        <Breadcrumbs
+          color="deep-purple"
+          fullWidth
+          className="bg-transparent text-deep-purple-900 dark:text-deep-purple-50"
+        >
+          <Link
+            to="/"
+            className="text-gray-800 dark:text-gray-200 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium"
+          >
+            Home
+          </Link>
+          <Link
+            to="/work"
+            className="text-gray-800 dark:text-gray-200 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium"
+          >
+            Work
+          </Link>
+          <Link className="text-deep-purple-400 dark:text-deep-purple-300 hover:text-deep-purple-400 dark:hover:text-deep-purple-300 underline underline-offset-4 text-sm font-medium">
+            {project.title}
+          </Link>
+        </Breadcrumbs>
+      </ThemeProvider>
       <div className="grid grid-cols-12 gap-y-8 lg:gap-12 items-start">
-        <div className="h-52 md:h-96 lg:h-80 rounded-lg overflow-hidden col-span-12 lg:col-span-5 lg:sticky top-28">
+        <div className="h-44 sm:h-[200px] md:h-96 lg:h-60 rounded-lg overflow-hidden col-span-12 lg:col-span-5 lg:sticky top-28">
           <img
             src={project.heroImage}
             alt={project.title}
