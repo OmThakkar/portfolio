@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-gray-700 dark:text-gray-50 dark:bg-gray-900 transition-colors ease-in-out duration-200 font-dm-sans;
+    }
+
+    .section-heading{
+        @apply text-2xl md:text-3xl lg:text-4xl font-medium text-gray-900 dark:text-white max-w-lg text-center mb-6 leading-tight;
+    }
+
+    .sub-heading{
+        @apply text-lg font-semibold text-deep-purple-400 dark:text-deep-purple-300;
+    }
+}
+
+@layer utilities{
+    .section-container{
+        @apply max-w-screen-2xl mx-auto py-8 px-5 lg:px-8 lg:py-12;
+    }
+
+    .nav-link{
+        @apply py-2 px-4 text-sm hover:bg-deep-purple-50/50 dark:hover:bg-deep-purple-50/10 dark:hover:text-deep-purple-50 rounded-lg hover:text-deep-purple-900 text-gray-800 dark:text-gray-50;
+    }
+
+    .highlight{
+        @apply text-deep-purple-400 dark:text-deep-purple-300;
+    }
+
+}
