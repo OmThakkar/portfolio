@@ -55,12 +55,12 @@ export function Modal({ status }) {
         <img
           src={image}
           alt={status}
-          className="h-40 w-40 object-contain dark:hidden"
+          className="h-64 w-full object-contain dark:hidden"
         />
         <img
           src={imageDark}
           alt={status}
-          className="h-40 w-40 object-contain hidden dark:block"
+          className="h-64 w-full object-contain hidden dark:block"
         />
         <div className="flex flex-col gap-1">
           <h4 className="sub-heading text-center">{message}</h4>
