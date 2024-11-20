@@ -44,7 +44,7 @@ const About = () => {
               As a polyglot fluent in six languages, I can switch from English
               to Japanese in a heartbeat—especially when binging anime or
               discussing gripping English series. Poetry is another passion of
-              mine, with my work once showcased on Poetry by Omni. I also enjoy
+              mine, with my work once showcased on <span className="underline underline-offset-4 text-deep-purple-400 dark:text-deep-purple-300 cursor-pointer font-semibold">Poetry by Omiii</span>. I also enjoy
               teaching front-end development, sharing resources, and simplifying
               concepts for anyone eager to learn.
             </p>
