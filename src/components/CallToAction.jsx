@@ -17,7 +17,7 @@ const CallToAction = () => {
         <a href="https://calendly.com/craftedbyom/30min" target="_blank">
           <Button
             variant="gradient"
-            className="inline-flex items-center gap-2 capitalize mt-10"
+            className="inline-flex items-center gap-2 capitalize mt-10 text-deep-purple-900"
             color="white"
           >
             <Rocket size={18} />
