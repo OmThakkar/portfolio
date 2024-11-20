@@ -145,7 +145,7 @@ export function NavigationBar() {
       <Collapse open={openNav}>
         {navList}
         <div className="flex items-center gap-x-1">
-          <a href={Resume} download>
+          <a href={Resume} download className="w-full">
             <Button
               variant="gradient"
               fullWidth
