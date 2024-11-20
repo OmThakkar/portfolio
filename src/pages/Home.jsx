@@ -4,6 +4,7 @@ import Services from '../components/Services'
 import Testimonials from '../components/Testimonials'
 import { ExperienceAndEducation } from '../components/ExperienceAndEducation'
 import Projects from '../components/Projects'
+import CallToAction from '../components/CallToAction'
 
 const Home = () => {
   return (
@@ -11,8 +12,9 @@ const Home = () => {
       <Hero/>
       <Services/>
       <Projects/>
-      <Testimonials/>
       <ExperienceAndEducation/>
+      <Testimonials/>
+      <CallToAction/>
     </div>
   )
 }
