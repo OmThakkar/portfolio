@@ -10,6 +10,7 @@ import Typewriter from "typewriter-effect";
 import { FileText, X, Menu, Sun, Moon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
+import Resume from "../assets/Om_Thakkar_Resume.pdf";
 
 export function NavigationBar() {
   const [openNav, setOpenNav] = useState(false);
@@ -103,7 +104,7 @@ export function NavigationBar() {
                 strings: ["Om Thakkar", "Passion", "Creativity", "Perfection"],
                 autoStart: true,
                 loop: true,
-                cursor: '_'
+                cursor: "_",
               }}
             />
           </div>
@@ -120,14 +121,16 @@ export function NavigationBar() {
               />
               <Moon size={18} />
             </span>
-            <Button
-              variant="gradient"
-              className="hidden lg:inline-flex items-center gap-2 capitalize"
-              color="deep-purple"
-            >
-              <FileText size={18} />
-              <span>Resume</span>
-            </Button>
+            <a href={Resume} download>
+              <Button
+                variant="gradient"
+                className="hidden lg:inline-flex items-center gap-2 capitalize"
+                color="deep-purple"
+              >
+                <FileText size={18} />
+                <span>Resume</span>
+              </Button>
+            </a>
           </div>
           <IconButton
             variant="text"
@@ -142,15 +145,17 @@ export function NavigationBar() {
       <Collapse open={openNav}>
         {navList}
         <div className="flex items-center gap-x-1">
-          <Button
-            variant="gradient"
-            fullWidth
-            className="inline-flex items-center justify-center gap-2"
-            color="deep-purple"
-          >
-            <FileText size={20} />
-            <span>Download Resume</span>
-          </Button>
+          <a href={Resume} download>
+            <Button
+              variant="gradient"
+              fullWidth
+              className="inline-flex items-center justify-center gap-2"
+              color="deep-purple"
+            >
+              <FileText size={20} />
+              <span>Resume</span>
+            </Button>
+          </a>
         </div>
       </Collapse>
     </Navbar>

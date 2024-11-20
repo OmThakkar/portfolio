@@ -33,9 +33,9 @@ const Hero = () => {
           He designs and develops functional, user-centric interfaces. In his
           free time, he is a part-time poet and an amateur tennis player. Learn
           more about{" "}
-          <span className="underline underline-offset-4 text-deep-purple-100 cursor-pointer font-semibold">
+          <Link to="/about" className="underline underline-offset-4 text-deep-purple-100 cursor-pointer font-semibold">
             Om Thakkar
-          </span>
+          </Link>
           .
         </p>
         <div className="inline-flex w-full justify-center items-center gap-3 mt-3">
@@ -49,18 +49,20 @@ const Hero = () => {
               <span>View Work</span>
             </Button>
           </Link>
-          <Button
-            variant="outlined"
-            size="lg"
-            className="inline-flex items-lg:center gap-1.5 capitalize border-deep-purple-50 text-deep-purple-50 group"
-            color="white"
-          >
-            <span>Get In Touch</span>
-            <MoveRight
-              size={18}
-              className="transition-transform duration-150 group-hover:-rotate-[40deg]"
-            />
-          </Button>
+          <Link to="/contact">
+            <Button
+              variant="outlined"
+              size="lg"
+              className="inline-flex items-lg:center gap-1.5 capitalize border-deep-purple-50 text-deep-purple-50 group"
+              color="white"
+            >
+              <span>Get In Touch</span>
+              <MoveRight
+                size={18}
+                className="transition-transform duration-150 group-hover:-rotate-[40deg]"
+              />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

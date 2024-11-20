@@ -8,7 +8,7 @@ const Services = () => {
     <section className="section-container flex flex-col gap-6 items-center">
       <SectionBadge
         icon={<GalleryVerticalEnd size={16} fill="white" />}
-        text={"What are my areas of Expertise"}
+        text={"My areas of Expertise"}
       />
       <h2 className="section-heading">From <span className="highlight">Designing</span> to <span className="highlight">Development</span>, I got you covered</h2>
       <div className="grid grid-cols-12 gap-y-12 md:gap-12 items-start w-full">

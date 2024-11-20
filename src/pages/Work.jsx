@@ -3,9 +3,6 @@ import { ProjectCard } from "../components/ProjectCard";
 import SectionBadge from "../components/SectionBadge";
 import { Laptop } from "lucide-react";
 import projects from "../data/projects";
-import { MoveRight } from "lucide-react";
-import { Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
