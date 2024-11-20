@@ -93,7 +93,7 @@ const ProjectDetails = () => {
         </Breadcrumbs>
       </ThemeProvider>
       <div className="grid grid-cols-12 gap-y-8 lg:gap-12 items-start">
-        <div className="h-44 sm:h-[200px] md:h-96 lg:h-72 rounded-lg overflow-hidden col-span-12 lg:col-span-5 lg:sticky top-28">
+        <div className="h-56 sm:h-[200px] md:h-96 lg:h-72 rounded-lg overflow-hidden col-span-12 lg:col-span-5 lg:sticky top-28">
           <img
             src={project.heroImage}
             alt={project.title}
