@@ -41,7 +41,7 @@ const About = () => {
             to clear my head. <br />
             <br />
             <p>
-              As a polyglot fluent in six languages, I can switch from English
+              As a polyglot fluent in six languages — English, Hindi, Marathi, Gujarati, German, Japanese. I can switch from English
               to Japanese in a heartbeat—especially when binging anime or
               discussing gripping English series. Poetry is another passion of
               mine, with my work once showcased on <span className="underline underline-offset-4 text-deep-purple-400 dark:text-deep-purple-300 cursor-pointer font-medium">Poetry by Omiii</span>. I also enjoy
