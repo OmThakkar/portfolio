@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "@material-tailwind/react";
 import { Rocket } from "lucide-react";
-import cta from "../assets/cta.png";
 
 const CallToAction = () => {
   return (

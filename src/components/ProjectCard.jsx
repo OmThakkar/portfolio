@@ -47,7 +47,7 @@ export function ProjectCard({
           <div className="flex w-full justify-between items-center">
             <h4 className="sub-heading">{title}</h4>
           </div>
-          <p>{truncateText(description, 100, `/work/${title}`)}</p>
+          <p>{truncateText(description, 110, `/work/${title}`)}</p>
         </div>
       </Link>
       <div className="flex flex-col items-star gap-3 w-full justify-between">

@@ -1,13 +1,12 @@
 import React from "react";
 import about from "../assets/about-light.png";
 import aboutDark from "../assets/about-dark.png";
-import quality from "../assets/quality.png";
+import values from "../assets/values.jpg";
 import SectionBadge from "../components/SectionBadge";
 import { Heart } from "lucide-react";
 import omthakkar from "../assets/omthakkar.jpg";
 import competiton from "../assets/about-3.jpg";
 import signDark from "../assets/sign-dark.png";
-import sign from "../assets/sign.jpg";
 
 const About = () => {
   return (
@@ -135,11 +134,12 @@ const About = () => {
             </li>
           </ol>
         </div>
-        <div className="h-40 lg:h-52 col-span-12 lg:col-span-5 order-first lg:order-last">
+        <div className="h-96 w-full flex items-center justify-center col-span-12 lg:col-span-5 order-first lg:order-last rounded-lg">
           <img
-            src={quality}
-            alt="Quality"
-            className="h-full w-full object-contain"
+            src={values}
+            alt="Values"
+            className="h-full w-92 object-cover p-2 rounded bg-deep-purple-50/50 dark:bg-deep-purple-50/10"
+            loading="lazy"
           />
         </div>
       </div>
