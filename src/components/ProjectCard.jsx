@@ -1,5 +1,5 @@
 import { Link2 } from "lucide-react";
-import {  Tooltip } from "@material-tailwind/react";
+import { Tooltip } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
 export function ProjectCard({
@@ -11,14 +11,26 @@ export function ProjectCard({
   liveLink,
   techStack,
 }) {
-  // Function to truncate the description
-  const truncateText = (text, maxLength) => {
-    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  // Function to truncate the description and add a "Read More" link
+  const truncateText = (text, maxLength, link) => {
+    return text.length > maxLength ? (
+      <>
+        {text.slice(0, maxLength)}...{" "}
+        <Link
+          to={link}
+          className="text-deep-purple-500 dark:text-deep-purple-200 underline underline-offset-2 text-sm"
+        >
+          Read more
+        </Link>
+      </>
+    ) : (
+      text
+    );
   };
 
   return (
     <div className="col-span-12 md:col-span-6 lg:col-span-4 flex flex-col gap-4">
-      <Link to={`/work/${title}`} key={index} className="flex flex-col gap-4">
+      <Link to={`/work/${title}`} className="flex flex-col gap-4">
         <div className="h-52 rounded-xl overflow-hidden w-full">
           <img
             src={heroImg}
@@ -35,7 +47,7 @@ export function ProjectCard({
           <div className="flex w-full justify-between items-center">
             <h4 className="sub-heading">{title}</h4>
           </div>
-          <p>{truncateText(description, 140)}</p>
+          <p>{truncateText(description, 120, `/work/${title}`)}</p>
         </div>
       </Link>
       <div className="flex flex-col items-star gap-3 w-full justify-between">
@@ -63,17 +75,6 @@ export function ProjectCard({
           <Link2 size={18} />
           <span>Live Preview</span>
         </span>
-        {/* <Button
-            variant="outlined"
-            className="inline-flex items-lg:center gap-1.5 capitalize dark:border-deep-purple-200 border-deep-purple-500 text-deep-purple-500 dark:text-deep-purple-200 group"
-            color="white"
-          >
-            <span>Explore More</span>
-            <MoveRight
-              size={18}
-              className="transition-transform duration-150 group-hover:-rotate-[40deg]"
-            />
-          </Button> */}
       </div>
     </div>
   );

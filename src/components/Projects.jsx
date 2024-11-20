@@ -38,7 +38,7 @@ const Projects = () => {
         <Button
           variant="outlined"
           size="lg"
-          className="inline-flex items-lg:center gap-1.5 capitalize border-none text-deep-purple-500 dark:text-deep-purple-200 group mt-10 underline underline-offset-4"
+          className="inline-flex items-lg:center gap-1.5 capitalize border-none text-deep-purple-500 dark:text-deep-purple-200 group mt-8 underline underline-offset-4"
           color="white"
         >
           <span>View All Work</span>
