@@ -7,8 +7,13 @@ import { Heart } from "lucide-react";
 import omthakkar from "../assets/omthakkar.jpg";
 import competiton from "../assets/about-3.jpg";
 import signDark from "../assets/sign-dark.png";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Om Thakkar - About";
+  }, []);
+
   return (
     <section className="section-container flex flex-col gap-6 mt-12 items-center">
       <SectionBadge
@@ -40,12 +45,16 @@ const About = () => {
             to clear my head. <br />
             <br />
             <p>
-              As a polyglot fluent in six languages — English, Hindi, Marathi, Gujarati, German, Japanese. I can switch from English
-              to Japanese in a heartbeat—especially when binging anime or
-              discussing gripping English series. Poetry is another passion of
-              mine, with my work once showcased on <span className="underline underline-offset-4 text-deep-purple-400 dark:text-deep-purple-300 cursor-pointer font-medium">Poetry by Omiii</span>. I also enjoy
-              teaching front-end development, sharing resources, and simplifying
-              concepts for anyone eager to learn.
+              As a polyglot fluent in six languages — English, Hindi, Marathi,
+              Gujarati, German, Japanese. I can switch from English to Japanese
+              in a heartbeat—especially when binging anime or discussing
+              gripping English series. Poetry is another passion of mine, with
+              my work once showcased on{" "}
+              <span className="underline underline-offset-4 text-deep-purple-400 dark:text-deep-purple-300 cursor-pointer font-medium">
+                Poetry by Omiii
+              </span>
+              . I also enjoy teaching front-end development, sharing resources,
+              and simplifying concepts for anyone eager to learn.
             </p>
           </p>
         </div>
@@ -144,9 +153,9 @@ const About = () => {
         </div>
       </div>
       <div className="w-full flex flex-col gap-2 items-start mt-12">
-        <p >Thank you for stopping by</p>
-        <img src={signDark} alt="" className="hidden dark:block h-20"/>
-        <img src={signDark} alt="" className="dark:hidden h-20 invert"/>
+        <p>Thank you for stopping by</p>
+        <img src={signDark} alt="" className="hidden dark:block h-20" />
+        <img src={signDark} alt="" className="dark:hidden h-20 invert" />
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
@@ -49,6 +49,10 @@ const Contact = () => {
       );
     },
   });
+
+  useEffect(() => {
+    document.title = "Om Thakkar - Contact";
+  }, []);
 
   return (
     <section className="section-container mt-12 flex flex-col gap-6 items-center">

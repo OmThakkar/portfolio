@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import projects from "../data/projects";
 import { Tooltip, Breadcrumbs, ThemeProvider } from "@material-tailwind/react";
 import NotFound from "../pages/NotFound";
+import { useEffect } from "react";
 
 const ProjectDetails = () => {
   const { title } = useParams();
@@ -61,6 +62,10 @@ const ProjectDetails = () => {
       },
     },
   };
+
+  useEffect(() => {
+    document.title = `${project.title}`;
+  }, []);
 
   return (
     <section className="section-container flex flex-col gap-6 mt-10 lg:mt-12">

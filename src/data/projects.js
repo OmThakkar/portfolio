@@ -2,16 +2,16 @@ import favv from "../assets/favv.png"
 // import favvDark from "../assets/favv-dark.gif"
 import myvenue from "../assets/myvenue.gif"
 import myvenueDark from "../assets/myvenue-dark.gif"
-// import retrievo from "../assets/retrievo.gif"
+import retrievo from "../assets/retrievo.png"
 // import retrevoDark from "../assets/retrievo-dark.gif"
 import irene from "../assets/irene.gif"
 import ireneDark from "../assets/irene-dark.gif"
 import eight from "../assets/800.gif"
 import eightDark from "../assets/800-dark.gif"
-// import whistlingWilds from "../assets/whistling-wilds.gif"
+import whistlingWilds from "../assets/whistling_wilds.png"
 // import whistlingWildsDark from "../assets/whistling-wilds-dark.gif"
-// import fireball from "../assets/fireball.gif"
-// import fireballDark from "../assets/fireball-dark.gif"
+import fireball from "../assets/fireball.gif"
+import fireballDark from "../assets/fireball-dark.gif"
 import { SiHtml5, SiTailwindcss, SiDjango, SiJavascript, SiFigma, SiFastapi, SiOpenai, SiGreensock, SiAmazonwebservices, SiGooglegemini, SiReact, SiBootstrap, SiPhonepe, SiWhatsapp } from "react-icons/si"
 import { MdOutlineMailOutline } from "react-icons/md";
 
@@ -82,8 +82,8 @@ const projects = [
   },
   {
     title: "Retrievo",
-    heroImage: irene,
-    heroDarkImage: irene,
+    heroImage: retrievo,
+    heroDarkImage: retrievo,
     overview: "Retrievo represents a groundbreaking AI-powered multi-source retrieval tool developed with cutting-edge technologies. Backed by Worqhat company, this innovative platform provides users with an unprecedented ability to retrieve information from diverse data sources, including Excel files, images, PDFs, and Word documents.The tool's most distinctive feature is its 'magic summary' capability, which generates concise summaries and identifies key keywords, enabling users to quickly grasp essential information. Integrating advanced AI technologies, Retrievo supports both voice input and output, making information retrieval an intuitive and seamless experience.By bridging multiple data formats and leveraging artificial intelligence, the platform transforms how professionals and researchers access and analyze complex information.",
     colorsUsed: ["#111827", "#1F2937", "#5850EC", "#F3F4F6", "#FFFFFF"],
     fontsUsed: ["UI Sans Serif"],
@@ -124,8 +124,8 @@ const projects = [
   },
   {
     title: "Whistling Wilds",
-    heroImage: irene,
-    heroDarkImage: irene,
+    heroImage: whistlingWilds,
+    heroDarkImage: whistlingWilds,
     overview: "Whistling Wilds is an innovative tour management platform developed for Mr. Ashish Inamdar, designed to streamline and automate the entire tour organization and booking process. The platform provides a comprehensive solution that covers every aspect of tour management, from initial tour selection to final payment.Users can explore various tours, view detailed information, and complete their entire booking journey seamlessly. Beyond the core booking functionality, the platform also features engaging blog content, an integrated shop for tour-related merchandise, and educational tutorials.By combining robust technological infrastructure with user-friendly design, Whistling Wilds transforms how tour enthusiasts discover, select, and participate in organized travel experiences.",
     colorsUsed: ["#13281B", "#163020", "#FAFAFA"],
     fontsUsed: ["Montserrat &", "Open Sans"],
@@ -145,8 +145,8 @@ const projects = [
   },
   {
     title: "Fireball",
-    heroImage: irene,
-    heroDarkImage: irene,
+    heroImage: fireball,
+    heroDarkImage: fireballDark,
     overview: "The Fireball project was a comprehensive digital solution for an innovative product with fire-extinguishing capabilities, serving clients in India and Dubai. The website was meticulously designed to present a clean, modern, and dynamically animated platform that showcases the product's unique features.Key objectives included creating an engaging digital presence that highlights the product's specifications, demonstrates its effectiveness through video content, and provides social proof via customer testimonials. The integrated contact form enables seamless customer interaction and order placement.By combining elegant design, smooth animations, and functional features like WhatsApp integration, the website effectively communicates the product's value proposition and facilitates direct customer engagement.",
     colorsUsed: ["#0F0F11", "#ED4541", "#FCFCFC"],
     fontsUsed: ["Avenir"],

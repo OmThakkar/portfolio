@@ -4,8 +4,13 @@ import alien from "../assets/alien.png";
 import alienDark from "../assets/alien-dark.png";
 import { Button } from "@material-tailwind/react";
 import { Home } from "lucide-react";
+import { useEffect } from "react";
 
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "404 - Not Found";
+  }, []);
+
   return (
     <div className="section-container flex flex-col h-full items-center text-center gap-4 min-h-svh justify-center">
       <img
