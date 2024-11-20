@@ -44,6 +44,7 @@ const Contact = () => {
         (error) => {
           console.error("FAILED...", error.text);
           setStatus("fail");
+          resetForm(); // Reset the form on success
         }
       );
     },
