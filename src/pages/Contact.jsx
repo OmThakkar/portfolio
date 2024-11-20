@@ -75,7 +75,7 @@ const Contact = () => {
           className="flex flex-col gap-6 col-span-12 lg:col-span-7 items-start"
         >
           <div className="w-full flex flex-col gap-1">
-            <label>Name</label>
+            <label className="text-sm lg:text-base">Name</label>
             <input
               className="focus:outline-none active:border-e-deep-purple-400 focus-within:border-deep-purple-400 focus-visible:border-deep-purple-400 border-deep-purple-50/50 focus:border-e-purple-300 dark:active:border-e-deep-purple-400 dark:focus-within:border-deep-purple-400 dark:focus-visible:border-deep-purple-400 dark:border-deep-purple-50/10 dark:focus:border-e-purple-300
               bg-deep-purple-50/20 border-2 rounded-lg  p-2 dark:bg-deep-purple-50/10"
@@ -93,7 +93,7 @@ const Contact = () => {
             )}
           </div>
           <div className="w-full flex flex-col gap-1">
-            <label>Subject</label>
+            <label className="text-sm lg:text-base">Subject</label>
             <input
               className="focus:outline-none active:border-e-deep-purple-400 focus-within:border-deep-purple-400 focus-visible:border-deep-purple-400 border-deep-purple-50/50 focus:border-e-purple-300 dark:active:border-e-deep-purple-400 dark:focus-within:border-deep-purple-400 dark:focus-visible:border-deep-purple-400 dark:border-deep-purple-50/10 dark:focus:border-e-purple-300
               bg-deep-purple-50/20 border-2 rounded-lg  p-2 dark:bg-deep-purple-50/10"
@@ -111,7 +111,7 @@ const Contact = () => {
             )}
           </div>
           <div className="w-full flex flex-col gap-1">
-            <label>Email</label>
+            <label className="text-sm lg:text-base">Email</label>
             <input
               className="focus:outline-none active:border-e-deep-purple-400 focus-within:border-deep-purple-400 focus-visible:border-deep-purple-400 border-deep-purple-50/50 focus:border-e-purple-300 dark:active:border-e-deep-purple-400 dark:focus-within:border-deep-purple-400 dark:focus-visible:border-deep-purple-400 dark:border-deep-purple-50/10 dark:focus:border-e-purple-300
               bg-deep-purple-50/20 border-2 rounded-lg  p-2 dark:bg-deep-purple-50/10"
@@ -129,7 +129,7 @@ const Contact = () => {
             )}
           </div>
           <div className="w-full flex flex-col gap-1">
-            <label>Message</label>
+            <label className="text-sm lg:text-base">Message</label>
             <textarea rows={5}
               className="focus:outline-none active:border-e-deep-purple-400 focus-within:border-deep-purple-400 focus-visible:border-deep-purple-400 border-deep-purple-50/50 focus:border-e-purple-300 dark:active:border-e-deep-purple-400 dark:focus-within:border-deep-purple-400 dark:focus-visible:border-deep-purple-400 dark:border-deep-purple-50/10 dark:focus:border-e-purple-300
               bg-deep-purple-50/20 border-2 rounded-lg  p-2 dark:bg-deep-purple-50/10 resize-none"
@@ -150,6 +150,7 @@ const Contact = () => {
             variant="gradient"
             className="inline-flex items-center justify-center w-full gap-2 capitalize"
             color="deep-purple"
+            size="lg"
             disabled={formik.isSubmitting}
           >
             <span>Send Message</span>

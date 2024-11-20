@@ -149,7 +149,7 @@ export function NavigationBar() {
             <Button
               variant="gradient"
               fullWidth
-              className="inline-flex items-center justify-center gap-2"
+              className="inline-flex items-center justify-center gap-2 w-full"
               color="deep-purple"
             >
               <FileText size={20} />
