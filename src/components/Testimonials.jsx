@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <figure className="relative">
                   <MdFormatQuote size={100} className="text-deep-purple-50/50 dark:text-deep-purple-50/10 absolute -z-10 -left-2 -top-12 transform rotate-180"/>
                   <blockquote className="px-6">
-                    <p className="text-gray-900 dark:text-gray-200 text-xl">
+                    <p className="text-gray-900 dark:text-gray-200 md:text-lg lg:text-xl">
                       “{item.quote}“
                     </p>
                   </blockquote>
