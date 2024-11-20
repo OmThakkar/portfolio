@@ -16,7 +16,7 @@ const TimelineItem = ({ img, tenure, title, description, achievements }) => {
 
         <p className="mt-3 max-w-screen-lg text-gray-900 dark:text-white">{description}</p>
 
-        <ul className="list-disc ms-4 md:ms-6 mt-2 space-y-1.5">
+        <ul className="list-disc ms-4 md:ms-6 mt-3 space-y-1.5">
           {achievements.map((item, index) => (
             <li key={index} className="ps-1 dark:text-gray-100 text-gray-800">
               {item}

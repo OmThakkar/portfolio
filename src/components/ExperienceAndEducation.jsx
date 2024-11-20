@@ -51,7 +51,7 @@ export function ExperienceAndEducation() {
               px: "px-2",
               color: "text-deep-purple-900 dark:text-deep-purple-50",
               fontSmoothing: "antialiased",
-              fontFamily: "font-sans",
+              fontFamily: "font-dm-sans",
               fontSize: "text-base",
               fontWeight: "font-normal",
               lineHeight: "leading-relaxed",
