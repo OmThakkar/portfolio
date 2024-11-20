@@ -59,7 +59,7 @@ const Contact = () => {
         <span className="highlight">Amazing Collaboration</span>
       </h2>
       <div className="grid grid-cols-12 gap-y-8 lg:gap-12 w-full">
-        <div className="col-span-12 lg:col-span-5">
+        <div className="col-span-12 lg:col-span-5 h-96">
           <img
             src={contact}
             alt=""
