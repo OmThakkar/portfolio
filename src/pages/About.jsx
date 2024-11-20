@@ -143,7 +143,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="w-full flex flex-col gap-2 items-start mt-20">
+      <div className="w-full flex flex-col gap-2 items-start mt-12">
         <p >Thank you for stopping by</p>
         <img src={signDark} alt="" className="hidden dark:block h-20"/>
         <img src={signDark} alt="" className="dark:hidden h-20 invert"/>
