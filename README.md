@@ -1,4 +1,4 @@
-Hello 👋,
+**Hello 👋,**
 
 This repository has the code for my portfolio website. You can clone the repository and try it out for yourself. Use the following commands once you clone the repository
 
